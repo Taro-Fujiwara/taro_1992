@@ -94,7 +94,9 @@ def comp_image():
     
     #作成したエクセルデータを保存する
     wb.save(str(excel_path))
+    #エクセルアプリケーションを削除する
     wb.app.quit()
+    #システムを正常終了する
     sys.exit(0)
 
 def filedialog_clicked():
